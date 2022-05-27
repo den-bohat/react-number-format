@@ -122,7 +122,7 @@ class NumberFormat extends React.Component {
 
       if (
         //while typing set state only when float value changes
-        ((!isNaN(floatValue) || !isNaN(lastFloatValue)) && floatValue !== lastFloatValue) ||
+        ((!isNaN(floatValue) || !isNaN(lastFloatValue)) && numAsString !== lastNumStr) ||
         //can also set state when float value is same and the format props changes
         lastValueWithNewFormat !== stateValue ||
         //set state always when not in focus and formatted value is changed
